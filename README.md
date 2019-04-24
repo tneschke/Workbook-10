@@ -5,20 +5,20 @@ See <https://graphics.cs.wisc.edu/WP/cs559-sp2019/workbooks/#README_files>
 
 ## please answer these first three required questions "inline" (as in the instructions)
 
-Name:
+Name:Teague Neschke
 
-WiscID:
+WiscID:neschke
 
-GitHub Login:
+GitHub Login:tneschke
 
 ## please answer these next (optional) questions on a line following the questions
 
-Attributions:
+Attributions:https://www.vecteezy.com/vector-art/95559-free-seamless-red-texture-vector
 
-Parts of the Assignment you did (or did not) do:
+Parts of the Assignment you did (or did not) do: all
 
-Did you do any bonus parts?
+Did you do any bonus parts? no
 
-Did you add any texture or object files?
+Did you add any texture or object files? yes
 
 Notes to the Grader:

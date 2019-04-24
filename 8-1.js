@@ -30,7 +30,7 @@ function test() {
     let objs = [];
     let dx = -6;
 
-    let shaderMat = shaderMaterial("./Shaders/e81.vs","./Shaders/e81.fs",
+    let shaderMat = shaderMaterial("./Shaders/ex81.vs","./Shaders/ex81.fs",
         {
             side:T.DoubleSide,
             uniforms: {

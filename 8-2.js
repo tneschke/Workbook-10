@@ -22,6 +22,9 @@ import * as InputHelpers from "./Libs/inputHelpers.js";
 import * as SimpleObjects from "./Framework/SimpleObjects.js";
 import {shaderMaterial} from "./Framework/shaderHelper.js";
 
+let image = new T.TextureLoader().load("./Textures/1.jpg");
+
+
 function test() {
     let mydiv = document.getElementById("8-2");
 
@@ -30,11 +33,13 @@ function test() {
     let objs = [];
     let dx = -6;
 
-    let shaderMat = shaderMaterial("./Shaders/e82.vs","./Shaders/e82.fs",
+    let shaderMat = shaderMaterial("./Shaders/ex82.vs","./Shaders/ex82.fs",
         {
             side:T.DoubleSide,
-            uniforms: {
+            uniforms : {
+                texture : {value: image}
             }
+            
         });
 
     world.add(new SimpleObjects.GrSphere({x:-2,y:1, material:shaderMat}));
