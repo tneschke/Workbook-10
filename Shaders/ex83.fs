@@ -3,8 +3,11 @@
 
 /* pass interpolated variables to from the vertex */
 varying vec2 v_uv;
+uniform sampler2D colormap;
+
 
 void main()
 {
-    gl_FragColor = vec4(.5, .5, 0 , 1.);
-}
+    vec4 lookupColor = texture2D(colormap,v_uv);
+    gl_FragColor = lookupColor;
+    }

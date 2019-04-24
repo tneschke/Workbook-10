@@ -13,7 +13,20 @@ uniform float checks;
 
 void main()
 {
-    float dc = .5;
+    float dc = 0.0;
+
+    float fraction = 1.0 / checks;
+
+    float countX = floor(v_uv.x / fraction);
+    float countY = floor(v_uv.y / fraction);
+
+    float sum = (countX + countY) / 2.0;
+    float sumFloor = floor(sum);
+
+    if(sum - sumFloor == 0.0 ){
+        dc = 1.0;
+    } 
+
 
     gl_FragColor = vec4(mix(light,dark,dc), 1.);
 }
